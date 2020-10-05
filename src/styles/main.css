@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+.main{
+    width: 370px;
+    height: 100vh;
+    margin: auto;
+
+    padding: 25px 50px;
+
+    background: #202020;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.main form{
+    width: 100%;
+
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 'text .'
+                         'pais pais'
+                         'fname lname'
+                         'username username'
+                         'email email'
+                         'senha senha'
+                         'termos termos'
+                         'button button';
+}
+
+.main h1{
+    grid-area: text;
+    margin: auto;
+    width: 100%;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 595;
+    font-size: 10pt;
+    text-indent: 10px;
+}
+
+.main input{
+    outline: 0;
+    border: 0;
+    height: 50px;
+    
+
+    text-indent: 15px;
+
+    color: #8f8f8f;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+    margin: 10px;
+    border-radius: 4px;
+}
+
+
+
+button{
+    background: #191919;
+    border: 0;
+    color: #595959;
+    height: 60px;
+    border-radius: 7px;
+
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14.5px;
+}
+
+.pais{
+    grid-area: pais;
+    background-color: #484848;
+}
+.fname{
+    grid-area: fname;
+    background: #2b2b2b2b;
+}
+.lname{
+    grid-area: lname;
+    background: #2b2b2b2b;
+}
+.username{
+    grid-area: username;
+    background: #2b2b2b2b;
+}
+.email{
+    grid-area: email;
+    background: #2b2b2b2b;
+}
+.senha{
+    grid-area: senha;
+    background: #2b2b2b2b;
+}
+.termos{
+    grid-area: termos;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #595959;
+    
+    
+
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+.button{
+    grid-area: button;
+}
+
+.logo{
+    width: 45px;
+}
+
